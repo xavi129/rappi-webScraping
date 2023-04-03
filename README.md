@@ -19,7 +19,7 @@ To run this script, you will need:
 2. Install the necessary Python libraries listed above.
 3. Install ChromeDriver using `webdriver_manager`.
 4. Set up a Google Sheet and obtain the credentials file. Follow the instructions at [Pygsheets Quickstart](https://pygsheets.readthedocs.io/en/stable/authorizing.html) to authorize Pygsheets.
-5. Modify the `resturantes` and `links` lists to include the desired restaurants and their corresponding links.
+5. Modify the `resturants` and `links` lists to include the desired restaurants and their corresponding links.
 6. Run the script using Python 3.
 
 ## License

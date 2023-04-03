@@ -44,7 +44,7 @@ for _ in range(n_scrolls): # Scrolls the page 'n_scrolls' times, to get more res
     sleep(3)
 
 
-resturantes = ["Masa","Maison Kayser","Starbucks","Avocalia","Crepes & Waffles","Azahar","Abasto","Brunch & Munch","Franco","WOK","Vin y Greta","Lina's Sándwiches","Sanamente Gourmet","Bagatelle"]
+resturants = ["Masa","Maison Kayser","Starbucks","Avocalia","Crepes & Waffles","Azahar","Abasto","Brunch & Munch","Franco","WOK","Vin y Greta","Lina's Sándwiches","Sanamente Gourmet","Bagatelle"]
 links = ['https://www.rappi.com.co/restaurantes/900025915-masa','https://www.rappi.com.co/restaurantes/900018774-maison-kayser','https://www.rappi.com.co/restaurantes/900030173-starbucks-cafe','https://www.rappi.com.co/restaurantes/900042109-avocalia','https://www.rappi.com.co/restaurantes/900055004-crepes-waffles','https://www.rappi.com.co/restaurantes/900068382-azahar-93','https://www.rappi.com.co/restaurantes/900011128-abasto','https://www.rappi.com.co/restaurantes/900042119-brunch-%26-munch-93','https://www.rappi.com.co/restaurantes/900028518-franco','https://www.rappi.com.co/restaurantes/900086567-wok','https://www.rappi.com.co/restaurantes/900244454-vin-y-gretta',"https://www.rappi.com.co/restaurantes/10000603-lina's-sandwiches-andino",'https://www.rappi.com.co/restaurantes/900026872?csr=true','https://www.rappi.com.co/restaurantes/900022963-bagatelle-parque-93']
 
 
@@ -53,7 +53,7 @@ description = []
 price = []
 
 restaurant= []
-for j in range(len(resturantes)):
+for j in range(len(resturants)):
     driver.get(links[j])
     sleep(7)
     restInfo = driver.find_elements(By.XPATH, '//div[@class="styles__ProductInfoContainer-sc-jkotxm-2 eCNeUM"]')
@@ -61,7 +61,7 @@ for j in range(len(resturantes)):
     print(platos)
     for i in platos: 
         print(i)
-        restaurant.append(resturantes[j])
+        restaurant.append(resturants[j])
         
         if i =="":
             continue
